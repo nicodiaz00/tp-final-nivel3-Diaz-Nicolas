@@ -1,0 +1,11 @@
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\bin\Debug\Helper.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\bin\Debug\Helper.pdb
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\bin\Debug\dominio.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\bin\Debug\negocio.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\bin\Debug\dominio.pdb
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\bin\Debug\negocio.pdb
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\obj\Debug\Helper.csproj.AssemblyReference.cache
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\obj\Debug\Helper.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\obj\Debug\Helper.csproj.CopyComplete
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\obj\Debug\Helper.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\Helper\obj\Debug\Helper.pdb

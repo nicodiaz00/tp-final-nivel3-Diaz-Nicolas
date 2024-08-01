@@ -1,0 +1,27 @@
+﻿body {
+    display:flex;
+    background-color: #27374D;
+    justify-content:center;
+    
+}
+.filaHome1{
+    
+    height:300px;
+}
+.btnListado{
+    width:200px;
+    height:200px;
+    border-radius:70px;
+}
+.btnPerfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+}
+.btnCatalogo {
+    width: 200px;
+    height: 200px;
+    border-radius: 70px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3556/3556878.png');
+    background-size:cover;
+}

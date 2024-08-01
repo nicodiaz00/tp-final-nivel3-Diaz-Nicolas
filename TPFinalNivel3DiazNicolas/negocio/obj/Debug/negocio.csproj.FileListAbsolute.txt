@@ -1,0 +1,9 @@
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\bin\Debug\negocio.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\bin\Debug\negocio.pdb
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\bin\Debug\dominio.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\bin\Debug\dominio.pdb
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\obj\Debug\negocio.dll
+C:\Users\Nico\Documents\c#nivelTres\tp-final-nivel3-Diaz-Nicolas\TPFinalNivel3DiazNicolas\negocio\obj\Debug\negocio.pdb
