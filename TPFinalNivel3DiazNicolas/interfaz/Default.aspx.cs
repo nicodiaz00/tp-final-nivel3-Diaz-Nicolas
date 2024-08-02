@@ -24,5 +24,10 @@ namespace interfaz
         {
             Response.Redirect("Listado.aspx", false);
         }
+
+        protected void btnCatalogo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Catalogo.aspx", false);
+        }
     }
 }

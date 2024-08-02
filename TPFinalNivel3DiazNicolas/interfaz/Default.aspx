@@ -22,7 +22,7 @@
 
             <div class="row filaHome">
                 <div class="col-4">
-                    <asp:Button runat="server" ID="btnCatalogo" Text="catalogo" CssClass="btnCatalogo"/>
+                    <asp:Button runat="server" ID="btnCatalogo" Text="catalogo" CssClass="btnCatalogo" OnClick="btnCatalogo_Click"/>
                 </div>
                 <div class="col-4">
 

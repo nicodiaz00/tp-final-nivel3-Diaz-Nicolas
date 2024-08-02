@@ -27,7 +27,7 @@ namespace negocio
                     articulo.Codigo = (string)accesodatos.Lector["Codigo"];
                     articulo.Nombre = (string)accesodatos.Lector["Nombre"];
                     articulo.Descripcion = (string)accesodatos.Lector["Descripcion"];
-                    articulo.Precio = (decimal)accesodatos.Lector["Precio"];
+                    articulo.Precio = Math.Round((decimal)accesodatos.Lector["Precio"],2);
                     articulo.ImagenUrl = (string)accesodatos.Lector["ImagenUrl"];
                     articulo.Marca = new Marca();
                     articulo.Marca.Id = (int)accesodatos.Lector["IdMarca"];
