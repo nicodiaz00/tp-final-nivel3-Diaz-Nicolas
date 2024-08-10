@@ -25,7 +25,7 @@
                         <a class="nav-link active" href="Catalogo.aspx">CATALOGO</a>
                         <a class="nav-link" href="Listado.aspx">LISTADO</a>
                         <a class="nav-link" href="About.aspx">ABOUT</a>
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="Formulario.aspx">Ingrese articulo</a>
                     </nav>
                 </div>
                 <div class="col-md-4 columna3">
