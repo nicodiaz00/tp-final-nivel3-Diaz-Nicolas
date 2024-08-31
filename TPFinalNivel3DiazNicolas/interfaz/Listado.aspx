@@ -3,32 +3,76 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:ScriptManager runat="server"></asp:ScriptManager>
     <div class="row primeraRow">
         <div class="col-12 columna">
             <h2>Lista de Articulos</h2>
+
         </div>
-        
+
     </div>
+    <div class="row segundaRow">
+        <div class="col-12">
+            <div class="mb-4 contenedorBusquedaSimple">
+                <label for="txtBusqueda" class="form-label">Buscar</label >
+                <asp:TextBox runat="server" AutoPostBack="true" ID="txtBusqueda" OnTextChanged="txtBusqueda_TextChanged" CssClass="form-control w-50"></asp:TextBox>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row terceraRow">
+        <div class="col-12 columnaBusquedaAvanzada">
+            <div class="container">
+                <label for="ddlNombre">Nombre</label>
+                <asp:DropDownList runat="server" ID="ddlNombre" CssClass="form-control w-50"></asp:DropDownList>
+            </div>
+            <div class="container">
+                <label for="ddlCriterio">Criterio</label>
+                <asp:DropDownList runat="server" ID="ddlCriterio" CssClass="form-control w-50"></asp:DropDownList>
+            </div>
+            <div class="container">
+                <label for="ddlFiltro">Filtro</label>
+                <asp:DropDownList runat="server" ID="ddlFiltro" CssClass="form-control w-50"></asp:DropDownList>
+            </div>
+            <div class="container">
+                <label for="dllEstado">Estado</label>
+                <asp:DropDownList runat="server" ID="ddlEstado" CssClass="form-control w-50"></asp:DropDownList>
+            </div>
+
+        </div>
+    </div>
+
     <div class="row">
+
         <div class="col-12 columnaListado">
+
             <div class="contenedorListado">
-                <asp:GridView runat="server" ID="dgvArticulos" AutoGenerateColumns="false"  CssClass="table tabladgv">
-                    <Columns>
-                        <asp:BoundField HeaderText="ID" DataField="Id" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
-                        <asp:BoundField HeaderText="CODIGO" DataField="Codigo" />
-                        <asp:BoundField HeaderText="NOMBRE" DataField="Nombre"/>
-                        <asp:BoundField HeaderText="DESCRIPCION" DataField="Descripcion" />
-                        <asp:BoundField HeaderText="IDMARCA" DataField="Marca.Id" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
-                        <asp:BoundField HeaderText="IDCATEGORIA" DataField="Categoria.Id" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
 
-                        <asp:BoundField HeaderText="CATEGORIA" DataField="Categoria" />
-                        <asp:BoundField HeaderText="MARCA" DataField="Marca" />
-                        <asp:BoundField HeaderText="IMAGEN" DataField="ImagenUrl" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
-                        <asp:BoundField HeaderText="PRECIO" DataField="Precio" />
-                        <asp:CommandField ShowSelectButton="true" HeaderText="Editar" SelectText="✍️" />
-                    </Columns>
+                <asp:UpdatePanel runat="server">
+                    <ContentTemplate>
 
-                </asp:GridView>
+
+
+                        <asp:GridView runat="server" ID="dgvArticulos" AutoGenerateColumns="false" CssClass="table tabladgv">
+                            <Columns>
+                                <asp:BoundField HeaderText="ID" DataField="Id" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
+                                <asp:BoundField HeaderText="CODIGO" DataField="Codigo" />
+                                <asp:BoundField HeaderText="NOMBRE" DataField="Nombre" />
+                                <asp:BoundField HeaderText="DESCRIPCION" DataField="Descripcion" />
+                                <asp:BoundField HeaderText="IDMARCA" DataField="Marca.Id" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
+                                <asp:BoundField HeaderText="IDCATEGORIA" DataField="Categoria.Id" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
+
+                                <asp:BoundField HeaderText="CATEGORIA" DataField="Categoria" />
+                                <asp:BoundField HeaderText="MARCA" DataField="Marca" />
+                                <asp:BoundField HeaderText="IMAGEN" DataField="ImagenUrl" ItemStyle-CssClass="oculto" HeaderStyle-CssClass="oculto" />
+                                <asp:BoundField HeaderText="PRECIO" DataField="Precio" />
+                                <asp:CommandField ShowSelectButton="true" HeaderText="Editar" SelectText="✍️" />
+                            </Columns>
+
+                        </asp:GridView>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
             </div>
         </div>
 

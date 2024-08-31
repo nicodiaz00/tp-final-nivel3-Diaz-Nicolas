@@ -52,6 +52,7 @@
     display: flex;
     justify-content: center;
     align-items:center;
+    flex-direction:column;
     
 }
 .primeraRow{
@@ -104,4 +105,18 @@
 
 .contendorMarca{
 
+}
+.segundaRow{
+    background-color:aqua;
+    height:100px;
+}
+.columnaBusquedaAvanzada{
+    background-color:orangered;
+    display:flex;
+}
+.contenedorBusquedaSimple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
 }
