@@ -30,8 +30,8 @@
                 </div>
                 <div class="col-md-4 columna3">
                     <div class="container">
-                        <asp:Button runat="server" Text="INICIAR SESION" CssClass="btnNav" />
-                        <asp:Button runat="server" Text="REGISTRARSE" CssClass="btnNav" />
+                        <asp:Button runat="server" Text="Registrarse" CssClass="btnNav" ID="btnRegistro" OnClick="btnRegistro_Click" />
+                        <asp:Button runat="server" Text="Login" CssClass="btnNav" ID="btnLogin" OnClick="btnLogin_Click" />
                     </div>
                     <div class="container">
                         <asp:ImageButton runat="server" ImageUrl="https://img.icons8.com/?size=100&id=7819&format=png&color=000000" />
