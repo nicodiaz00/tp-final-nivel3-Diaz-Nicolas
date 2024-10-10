@@ -111,12 +111,20 @@
     height:100px;
 }
 .columnaBusquedaAvanzada{
-    background-color:orangered;
+    
     display:flex;
 }
 .contenedorBusquedaSimple {
-    display: flex;
+    display: inline;
     justify-content: center;
     align-items: center;
     padding-top: 30px;
+}
+.cajaBusqueda{
+    margin-left:20px;
+}
+.terceraRow{
+    background-color:aquamarine;
+    height:100px;
+
 }

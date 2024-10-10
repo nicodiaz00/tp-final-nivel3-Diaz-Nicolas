@@ -23,5 +23,10 @@ namespace interfaz
             dgvArticulos.DataSource= listaFiltrada;
             dgvArticulos.DataBind();
         }
+
+        protected void checkBoxBusquedaAvanzada_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -12,17 +12,24 @@
 
     </div>
     <div class="row segundaRow">
-        <div class="col-12">
-            <div class="mb-4 contenedorBusquedaSimple">
-                <label for="txtBusqueda" class="form-label">Buscar</label >
-                <asp:TextBox runat="server" AutoPostBack="true" ID="txtBusqueda" OnTextChanged="txtBusqueda_TextChanged" CssClass="form-control w-50"></asp:TextBox>
+        <!--FILA BUSQUEDA SIMPLE -->
+        <div class="col-6 cajaBusqueda">
+            <div class="contendorB">
+                <div class="mb-4 contenedorBusquedaSimple">
+                    <label for="txtBusqueda" class="form-label">Buscar</label>
+                    <asp:TextBox runat="server" AutoPostBack="true" ID="txtBusqueda" OnTextChanged="txtBusqueda_TextChanged" CssClass="form-control w-50"></asp:TextBox>
+                    <asp:CheckBox ID="checkBoxBusquedaAvanzada" Text="Busqueda avanzada" runat="server" Checked="false" OnCheckedChanged="checkBoxBusquedaAvanzada_CheckedChanged" AutoPostBack="true" />
+                </div>
+
             </div>
-
-
         </div>
     </div>
     <div class="row terceraRow">
-        <div class="col-12 columnaBusquedaAvanzada">
+        <!--FILA BUSQUEDA AVANZADA -->
+        <%if (checkBoxBusquedaAvanzada.Checked)
+            {%>
+
+        <div class="col-8 columnaBusquedaAvanzada">
             <div class="container">
                 <label for="ddlNombre">Nombre</label>
                 <asp:DropDownList runat="server" ID="ddlNombre" CssClass="form-control w-50"></asp:DropDownList>
@@ -39,10 +46,9 @@
                 <label for="dllEstado">Estado</label>
                 <asp:DropDownList runat="server" ID="ddlEstado" CssClass="form-control w-50"></asp:DropDownList>
             </div>
-
         </div>
+        <%} %>
     </div>
-
     <div class="row">
 
         <div class="col-12 columnaListado">
