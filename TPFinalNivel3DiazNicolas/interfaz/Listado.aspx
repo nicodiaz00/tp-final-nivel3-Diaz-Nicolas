@@ -29,26 +29,33 @@
         <%if (checkBoxBusquedaAvanzada.Checked)
             {%>
 
-        <div class="col-8 columnaBusquedaAvanzada">
-            <div class="container">
-                <label for="ddlNombre">Nombre</label>
-                <asp:DropDownList runat="server" ID="ddlNombre" CssClass="form-control w-50"></asp:DropDownList>
+        <div class="col-6 columnaBusquedaAvanzada">
+            <div class="contenedorDDL">
+                <div class="container">
+                    <label for="ddlCampo">Campo</label>
+                    <asp:DropDownList runat="server" ID="ddlCampo" CssClass="form-control">
+                        <asp:ListItem Text="Nombre"></asp:ListItem>
+                        <asp:ListItem Text="Tipo"></asp:ListItem>
+                        <asp:ListItem Text="Precio"></asp:ListItem>
+                    </asp:DropDownList>
+                </div>
+                <div class="container">
+                    <label for="ddlCriterio">Criterio</label>
+                    <asp:DropDownList runat="server" ID="ddlCriterio" CssClass="form-control"></asp:DropDownList>
+                </div>
+                <div class="container">
+                    <label for="ddlFiltro">Filtro</label>
+                    <asp:DropDownList runat="server" ID="ddlFiltro" CssClass="form-control"></asp:DropDownList>
+                </div>
             </div>
-            <div class="container">
-                <label for="ddlCriterio">Criterio</label>
-                <asp:DropDownList runat="server" ID="ddlCriterio" CssClass="form-control w-50"></asp:DropDownList>
+            <div class="contenedorBtnBusqueda">
+                <asp:Button runat="server" ID="btnBuscar" Text="Buscar" CssClass=""/>
             </div>
-            <div class="container">
-                <label for="ddlFiltro">Filtro</label>
-                <asp:DropDownList runat="server" ID="ddlFiltro" CssClass="form-control w-50"></asp:DropDownList>
-            </div>
-            <div class="container">
-                <label for="dllEstado">Estado</label>
-                <asp:DropDownList runat="server" ID="ddlEstado" CssClass="form-control w-50"></asp:DropDownList>
-            </div>
+
         </div>
         <%} %>
     </div>
+
     <div class="row">
 
         <div class="col-12 columnaListado">

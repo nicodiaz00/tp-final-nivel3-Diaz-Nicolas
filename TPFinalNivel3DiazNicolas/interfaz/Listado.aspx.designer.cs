@@ -33,13 +33,13 @@ namespace interfaz
         protected global::System.Web.UI.WebControls.CheckBox checkBoxBusquedaAvanzada;
 
         /// <summary>
-        /// Control ddlNombre.
+        /// Control ddlCampo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNombre;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCampo;
 
         /// <summary>
         /// Control ddlCriterio.
@@ -60,13 +60,13 @@ namespace interfaz
         protected global::System.Web.UI.WebControls.DropDownList ddlFiltro;
 
         /// <summary>
-        /// Control ddlEstado.
+        /// Control btnBuscar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlEstado;
+        protected global::System.Web.UI.WebControls.Button btnBuscar;
 
         /// <summary>
         /// Control dgvArticulos.

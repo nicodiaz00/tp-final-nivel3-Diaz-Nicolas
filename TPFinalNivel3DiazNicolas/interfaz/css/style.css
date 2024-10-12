@@ -113,6 +113,7 @@
 .columnaBusquedaAvanzada{
     
     display:flex;
+    flex-direction:column;
 }
 .contenedorBusquedaSimple {
     display: inline;
@@ -121,10 +122,21 @@
     padding-top: 30px;
 }
 .cajaBusqueda{
-    margin-left:20px;
+    margin-left:30px;
 }
 .terceraRow{
     background-color:aquamarine;
-    height:100px;
+    height:160px;
 
+}
+.contenedorDDL{
+    display:flex;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:30px;
+}
+.contenedorBtnBusqueda{
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:30px;
 }

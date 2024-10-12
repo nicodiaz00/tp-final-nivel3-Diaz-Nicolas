@@ -10,8 +10,11 @@ namespace interfaz
 {
     public partial class Listado : System.Web.UI.Page
     {
+        public bool filtroAvanzado {  get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            filtroAvanzado = false;
             dgvArticulos.DataSource = Session["listadoArticulo"];
             dgvArticulos.DataBind();
         }
