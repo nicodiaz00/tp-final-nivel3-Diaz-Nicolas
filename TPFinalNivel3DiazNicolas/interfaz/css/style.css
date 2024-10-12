@@ -82,11 +82,10 @@
 }
 .tarjetaCatalogo {
     background-color: lightslategrey;
-    height: 600px;
-    margin-left: 30px;
-    width: 80%;
-     /* Ajusta la altura según sea necesario */
-    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+    height: 350px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
 }
 }
 .img-fluid {
@@ -107,7 +106,7 @@
 
 }
 .segundaRow{
-    background-color:aqua;
+    
     height:100px;
 }
 .columnaBusquedaAvanzada{
@@ -125,7 +124,7 @@
     margin-left:30px;
 }
 .terceraRow{
-    background-color:aquamarine;
+    
     height:160px;
 
 }
@@ -133,10 +132,23 @@
     display:flex;
     margin-top:10px;
     margin-bottom:10px;
-    margin-left:30px;
+    margin-left:20px;
 }
 .contenedorBtnBusqueda{
     margin-top:10px;
     margin-bottom:10px;
     margin-left:30px;
+}
+.filaCatalogo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    margin-bottom: 70px;
+}
+.colCatalogo{
+    width:350px;
+}
+.rowCatalogo{
+    justify-content:center;
 }

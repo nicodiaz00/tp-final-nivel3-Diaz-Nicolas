@@ -16,9 +16,11 @@
     <form id="form1" runat="server">
         <header>
             <div class="row rowHeader">
+                <!--
                 <div class="col-4 columna1">
                     <asp:ImageButton runat="server" ImageUrl="https://img.icons8.com/?size=100&id=2797&format=png&color=000000" />
                 </div>
+                -->
                 <div class="col-4 columna2">
                     <nav class="nav justify-content-center navegacion">
 
