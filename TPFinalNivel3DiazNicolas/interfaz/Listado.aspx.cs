@@ -10,13 +10,16 @@ namespace interfaz
 {
     public partial class Listado : System.Web.UI.Page
     {
-        public bool filtroAvanzado {  get; set; }
+        public bool FiltroAvanzado {  get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            filtroAvanzado = false;
-            dgvArticulos.DataSource = Session["listadoArticulo"];
-            dgvArticulos.DataBind();
+            if (!IsPostBack)
+            {
+                FiltroAvanzado = false;
+                dgvArticulos.DataSource = Session["listadoArticulo"];
+                dgvArticulos.DataBind();
+            }
+            
         }
 
         protected void txtBusqueda_TextChanged(object sender, EventArgs e)
@@ -29,7 +32,8 @@ namespace interfaz
 
         protected void checkBoxBusquedaAvanzada_CheckedChanged(object sender, EventArgs e)
         {
-
+            FiltroAvanzado = checkBoxBusquedaAvanzada.Checked;
+            txtBusqueda.Enabled = !FiltroAvanzado;
         }
     }
 }

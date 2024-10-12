@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="contenedorBtnBusqueda">
-                <asp:Button runat="server" ID="btnBuscar" Text="Buscar" CssClass=""/>
+                <asp:Button runat="server" ID="btnBuscar" Text="Buscar" CssClass="btn btn-primary"/>
             </div>
 
         </div>
