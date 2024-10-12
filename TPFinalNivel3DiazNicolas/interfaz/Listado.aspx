@@ -4,6 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <asp:ScriptManager runat="server"></asp:ScriptManager>
+    <asp:UpdatePanel runat="server">
+        <ContentTemplate>
     <div class="row primeraRow">
         <div class="col-12 columna">
             <h2>Lista de Articulos</h2>
@@ -33,9 +35,9 @@
             <div class="contenedorDDL">
                 <div class="container">
                     <label for="ddlCampo">Campo</label>
-                    <asp:DropDownList runat="server" ID="ddlCampo" CssClass="form-control">
+                    <asp:DropDownList runat="server" ID="ddlCampo" CssClass="form-control" OnSelectedIndexChanged="ddlCampo_SelectedIndexChanged" AutoPostBack="true">
+                        <asp:ListItem Text="Codigo"></asp:ListItem>
                         <asp:ListItem Text="Nombre"></asp:ListItem>
-                        <asp:ListItem Text="Tipo"></asp:ListItem>
                         <asp:ListItem Text="Precio"></asp:ListItem>
                     </asp:DropDownList>
                 </div>
@@ -45,17 +47,19 @@
                 </div>
                 <div class="container">
                     <label for="ddlFiltro">Filtro</label>
-                    <asp:DropDownList runat="server" ID="ddlFiltro" CssClass="form-control"></asp:DropDownList>
+                    <asp:TextBox runat="server" ID="txtFiltro" CssClass="form-control"></asp:TextBox>
+                    
                 </div>
             </div>
             <div class="contenedorBtnBusqueda">
-                <asp:Button runat="server" ID="btnBuscar" Text="Buscar" CssClass="btn btn-primary"/>
+                <asp:Button runat="server" ID="btnBuscar" Text="Buscar" CssClass="btn btn-primary" OnClick="btnBuscar_Click"/>
             </div>
 
         </div>
         <%} %>
     </div>
-
+            </ContentTemplate>
+    </asp:UpdatePanel>
     <div class="row">
 
         <div class="col-12 columnaListado">
@@ -90,5 +94,6 @@
         </div>
 
     </div>
+        
 
 </asp:Content>

@@ -1,4 +1,5 @@
 ﻿using dominio;
+using negocio;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,40 @@ namespace interfaz
         {
             FiltroAvanzado = checkBoxBusquedaAvanzada.Checked;
             txtBusqueda.Enabled = !FiltroAvanzado;
+        }
+
+        protected void ddlCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlCriterio.Items.Clear();   
+            if (ddlCampo.SelectedItem.ToString() == "Codigo" || ddlCampo.SelectedItem.ToString() == "Nombre")
+            {
+                ddlCriterio.Items.Add("Empieza");
+                ddlCriterio.Items.Add("Contiene");
+                ddlCriterio.Items.Add("Termina");
+            }
+            else
+            {
+                ddlCriterio.Items.Add("Igual a");
+                ddlCriterio.Items.Add("Mayor a");
+                ddlCriterio.Items.Add("Menor a");
+            }
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio articuloNegocio = new ArticuloNegocio();
+
+            try
+            {
+                dgvArticulos.DataSource = articuloNegocio.filtrarArticulo(ddlCampo.SelectedItem.ToString(), ddlCriterio.SelectedItem.ToString(), txtFiltro.Text);
+                dgvArticulos.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Session.Add("error", ex);
+                throw;
+            }
+            
         }
     }
 }
