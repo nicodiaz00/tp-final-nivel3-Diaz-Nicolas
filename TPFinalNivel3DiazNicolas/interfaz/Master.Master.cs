@@ -18,7 +18,7 @@ namespace interfaz
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Login.aspx",false);
+            Response.Redirect("Log.aspx",false);
         }
 
         protected void btnRegistro_Click(object sender, EventArgs e)

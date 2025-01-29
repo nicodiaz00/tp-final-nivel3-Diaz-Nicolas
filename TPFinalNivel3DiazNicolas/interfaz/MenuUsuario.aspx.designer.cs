@@ -11,7 +11,7 @@ namespace interfaz
 {
 
 
-    public partial class About
+    public partial class MenuUsuario
     {
     }
 }

@@ -7,11 +7,14 @@ using System.Web.UI.WebControls;
 
 namespace interfaz
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class Error : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Session["error"] != null)
+            {
+                lblError.Text = Session["error"].ToString();
+            }
         }
     }
 }

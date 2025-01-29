@@ -6,40 +6,36 @@
     <asp:ScriptManager runat="server" ID="scriptManager" />
 
 
-    <asp:UpdatePanel runat="server">
-        <ContentTemplate>
-            <div class="row filaHome1">
-                <div class="col-4">
-                    <p>as</p>
-                </div>
-                <div class="col-4">
-                    <p>as</p>
-                </div>
-                <div class="col-4">
-                    <p>as</p>
-                </div>
+   
+        
+        <div class="row filaCatalogo">
+    <h2>Catalogo de articulos</h2>
+</div>
+<div class="row row-cols-1 row-cols-md-3 g-4 rowCatalogo" >
+
+    <%
+        foreach (dominio.Articulo articulo in Listado)
+        {
+    %>
+    <div class="col colCatalogo">
+        <div class="card tarjetaCatalogo">
+            <div class="contedorTarjeta">
+                <img src="<%:articulo.ImagenUrl %>" alt="Avatar" class="imagenes">
             </div>
 
-            <div class="row filaHome">
-                <div class="col-4">
-                    <asp:Button runat="server" ID="btnCatalogo" Text="catalogo" CssClass="btnCatalogo" OnClick="btnCatalogo_Click"/>
-                </div>
-                <div class="col-4">
-
-                    <asp:Button runat="server" ID="btnListado" CssClass="btnListado" Text="Listado" OnClick="btnListado_Click"/>
-                </div>
-                <div class="col-4">
-                    <asp:Button runat="server" ID="btnPerfil" Text="Perfil" CssClass="btnPerfil" />
-                </div>
-
-
-
-
+            <div class="container">
+                <h4><b><%:articulo.Nombre %></b></h4>
+                <p><%:articulo.Descripcion %></p>
             </div>
+        </div>
+    </div>
 
+    <%  }
 
-        </ContentTemplate>
-    </asp:UpdatePanel>
+    %>
+</div>
+
+       
 
 
 </asp:Content>
