@@ -16,19 +16,21 @@ namespace interfaz
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArticuloNegocio negocio = new ArticuloNegocio();
-            Listado=negocio.listarArticulo();
-            Session.Add("listadoArticulo", Listado);
+            if (!IsPostBack)
+            {
+                ArticuloNegocio negocio = new ArticuloNegocio();
+                Listado = negocio.listarArticulo();
+                Session.Add("listadoArticulo", Listado);
+
+                repArticulo.DataSource = Listado;
+                repArticulo.DataBind();
+            }
+            
         }
 
-        protected void btnListado_Click(object sender, EventArgs e)
+        protected void btnIdArticulo_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Listado.aspx", false);
-        }
-
-        protected void btnCatalogo_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Catalogo.aspx", false);
+            string idArticulo = ((Button)sender).CommandArgument;
         }
     }
 }

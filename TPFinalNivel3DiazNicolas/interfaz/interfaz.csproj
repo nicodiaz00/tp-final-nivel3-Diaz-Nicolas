@@ -70,7 +70,6 @@
     <Content Include="Error.aspx" />
     <Content Include="Log.aspx" />
     <Content Include="About.aspx" />
-    <Content Include="css\style.css" />
     <Content Include="css\style2.css" />
     <Content Include="Default.aspx" />
     <Content Include="Formulario.aspx" />
@@ -126,13 +125,6 @@
     <Compile Include="Listado.aspx.designer.cs">
       <DependentUpon>Listado.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Master.Master.cs">
-      <DependentUpon>Master.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Master.Master.designer.cs">
-      <DependentUpon>Master.Master</DependentUpon>
-    </Compile>
     <Compile Include="masterDefault.Master.cs">
       <DependentUpon>masterDefault.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,7 +149,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Master.Master" />
     <Content Include="masterDefault.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">

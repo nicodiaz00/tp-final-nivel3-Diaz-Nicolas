@@ -24,6 +24,9 @@ namespace dominio
             Pass = pass;
             
             
+            
         }
+
+        public Usuario() { }
     }
 }

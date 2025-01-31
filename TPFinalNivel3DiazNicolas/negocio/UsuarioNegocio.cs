@@ -26,7 +26,11 @@ namespace negocio
                     usuario.Id = (int)datos.Lector["Id"];
                     usuario.Email = (string)datos.Lector["email"];
                     usuario.Pass = (string)datos.Lector["pass"];
-                    usuario.TipoUsuario = (int)(datos.Lector["admin"]) == 1 ? TipoUsuario.ADMIN : TipoUsuario.NORMAL;
+
+                    int userValue = Convert.ToInt32(datos.Lector["admin"]);
+                    usuario.TipoUsuario = (TipoUsuario)userValue;
+                    
+                     
                     return true;
                 }
                 return false;
@@ -41,6 +45,20 @@ namespace negocio
                 datos.cerrarConexion();
             }
 
+        }
+
+        public void registrarUsuario(Usuario usuarioNuevo)
+        {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

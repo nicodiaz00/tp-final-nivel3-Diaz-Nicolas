@@ -1,27 +1,21 @@
-﻿body {
+﻿body{
+    background-color:aqua;
+    width:100%;
+}
+.columnacard{
     display:flex;
-    background-color: #27374D;
-    justify-content:center;
+    
     
 }
-.filaHome1{
-    
-    height:300px;
+.card {
+    width: 18rem;
+    padding-top:20px
+
 }
-.btnListado{
-    width:200px;
-    height:200px;
-    border-radius:70px;
+header{
+    background-color:red;
+    width:100%;
 }
-.btnPerfil {
-    width: 200px;
-    height: 200px;
-    border-radius: 70px;
-}
-.btnCatalogo {
-    width: 200px;
-    height: 200px;
-    border-radius: 70px;
-    background-image: url('https://cdn-icons-png.flaticon.com/512/3556/3556878.png');
-    background-size:cover;
+.oculto {
+    display:none;
 }
