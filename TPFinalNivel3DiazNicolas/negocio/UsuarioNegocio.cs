@@ -9,31 +9,61 @@ namespace negocio
 {
     public class UsuarioNegocio
     {
-        public bool loguearse (Usuario usuario)
+        private string urlDefault = "https://static.vecteezy.com/system/resources/previews/013/042/571/original/default-avatar-profile-icon-social-media-user-photo-in-flat-style-vector.jpg";
+        public Usuario loguearse (string email, string pass)
         {
             AccesoDatos datos = new AccesoDatos ();
 
             try
             {
-                datos.setearConsulta("select Id, email, pass, admin from USERS where email = @email and pass = @pass");
-                datos.setearParametro("@email", usuario.Email);
-                datos.setearParametro("@pass", usuario.Pass);
+                datos.setearConsulta("select Id, email, pass, nombre, apellido, urlImagenPerfil, admin from USERS where email = @email and pass = @pass");
+                datos.setearParametro("@email", email );
+                datos.setearParametro("@pass", pass);
 
 
                 datos.ejecutarLectura();
                 while (datos.Lector.Read())
                 {
+                    Usuario usuario = new Usuario ();
+
                     usuario.Id = (int)datos.Lector["Id"];
                     usuario.Email = (string)datos.Lector["email"];
                     usuario.Pass = (string)datos.Lector["pass"];
+                    if(datos.Lector.IsDBNull(datos.Lector.GetOrdinal("nombre")))
+                    {
+                        usuario.Nombre = "";
+                    }
+                    else
+                    {
+                        usuario.Nombre = (string)datos.Lector["nombre"];
 
+                    }
+                    if(datos.Lector.IsDBNull(datos.Lector.GetOrdinal("apellido")))
+                    {
+                        usuario.Apellido = "";
+                    }
+                    else
+                    {
+                        usuario.Apellido = (string)datos.Lector["apellido"];
+                    }
+                    if (datos.Lector.IsDBNull(datos.Lector.GetOrdinal("urlImagenPerfil")))
+                    {
+                        usuario.UrlImagen = urlDefault;
+                    }
+                    else
+                    {
+                        usuario.UrlImagen = (string)datos.Lector["urlImagenPerfil"];
+                    }
+
+                    
+                     ;
                     int userValue = Convert.ToInt32(datos.Lector["admin"]);
                     usuario.TipoUsuario = (TipoUsuario)userValue;
                     
                      
-                    return true;
+                    return usuario;
                 }
-                return false;
+                return null;
             }
             catch (Exception ex)
             {

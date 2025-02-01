@@ -16,41 +16,8 @@ namespace interfaz
 
         }
 
-        protected void btnLog_Click(object sender, EventArgs e)
-        {
-            Usuario usuario;
-            UsuarioNegocio usuarioNegocio = new UsuarioNegocio();
+        
 
-            try
-            {
-                usuario = new Usuario(txtUser.Text, txtPassword.Text);
-                if (usuarioNegocio.loguearse(usuario))
-                {
-                    Session.Add("usuario",usuario);
-                    Response.Redirect("MenuUsuario.aspx");
-
-                }
-                else
-                {
-                    Session.Add("erro", "datos incorrectos");
-                    Response.Redirect("Error.aspx");
-                };
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Error.aspx");
-        }
-
-        protected void Button1_Click1(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

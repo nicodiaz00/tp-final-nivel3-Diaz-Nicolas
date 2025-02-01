@@ -13,6 +13,9 @@ namespace dominio
     }
     public class Usuario
     {
+        public string Nombre { get; set; }  
+        public string Apellido { get; set; } 
+        public string UrlImagen { get; set; }
         public int Id {  get; set; }
         public string Pass {  get; set; }
         public string Email { get; set; }
